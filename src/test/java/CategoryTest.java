@@ -31,7 +31,7 @@ public class CategoryTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String category = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals("Your category is Starvation", category, "Category does not match");
+        Assert.assertEquals(category, "Your category is Starvation", "Category does not match");
     }
 
     @Test
@@ -49,7 +49,7 @@ public class CategoryTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String category = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals("Your category is Underweight", category, "Category does not match");
+        Assert.assertEquals(category, "Your category is Underweight", "Category does not match");
     }
 
     @Test
@@ -67,7 +67,7 @@ public class CategoryTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String category = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals("Your category is Normal", category, "Category does not match");
+        Assert.assertEquals(category, "Your category is Normal", "Category does not match");
     }
 
     @Test
@@ -85,7 +85,7 @@ public class CategoryTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String category = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals("Your category is Overweight", category, "Category does not match");
+        Assert.assertEquals(category, "Your category is Overweight", "Category does not match");
     }
 
     @Test
@@ -103,7 +103,7 @@ public class CategoryTest {
         driver.findElement(By.name("ht")).sendKeys("170");
         driver.findElement(By.name("cc")).click();
         String category = driver.findElement(By.name("desc")).getAttribute("value");
-        Assert.assertEquals("Your category is Obese", category, "Category does not match");
+        Assert.assertEquals(category, "Your category is Obese", "Category does not match");
     }
 
     @AfterMethod
